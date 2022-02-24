@@ -31,3 +31,8 @@ body {
   border: 0px;
   border-radius: 8px;
 }
+
+/* Circle class styling goes here */
+.circle {
+  fill: orange;
+}
