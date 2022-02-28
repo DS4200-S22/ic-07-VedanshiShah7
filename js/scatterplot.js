@@ -80,8 +80,8 @@ d3.csv("data/scatter.csv").then((data3) => {
 
     // Mouse moving event handler
     let mousemove3 = function(event, d) {
-    tooltip3.style("left", (event.x)+"px") 
-            .style("top", (event.y + yTooltipOffset) +"px");
+    tooltip3.style("left", (event.pageX)+"px") 
+            .style("top", (event.pageY + yTooltipOffset) +"px");
     };
 
     // Mouseout event handler

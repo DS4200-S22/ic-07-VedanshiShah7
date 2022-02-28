@@ -94,8 +94,8 @@ const mouseover1 = function(event, d) {
 
 // Mouse moving event handler
 const mousemove1 = function(event, d) {
-  tooltip1.style("left", (event.x)+"px") // sets and shows location of mouse in the div from the left and the top
-          .style("top", (event.y + yTooltipOffset) +"px"); // top location in px
+  tooltip1.style("left", (event.pageX)+"px") // sets and shows location of mouse in the div from the left and the top
+          .style("top", (event.pageY + yTooltipOffset) +"px"); // top location in px
 }
 
 // Mouseout event handler
@@ -193,8 +193,8 @@ d3.csv("data/barchart.csv").then((data2) => {
 
   // Mouse moving event handler
   let mousemove2 = function(event, d) {
-    tooltip2.style("left", (event.x)+"px") 
-            .style("top", (event.y + yTooltipOffset) +"px");
+    tooltip2.style("left", (event.pageX)+"px") 
+            .style("top", (event.pageY + yTooltipOffset) +"px");
   };
 
   // Mouseout event handler
